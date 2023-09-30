@@ -35,18 +35,22 @@
             <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-32" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Triangle</h2>
+            <h2 id="tText" class="card-title">Triangle</h2>
             <p>Area (A) = 0.5 <i class="fa-solid fa-xmark "></i> b <i class="fa-solid fa-xmark"></i> h</p>
             <div class="flex justify-center w-[95%] mx-auto items-center">
               <div>
-                <input type="text" placeholder="b" class=" input input-bordered inline  input-sm w-2/3" /> cm
+                <input id="tInput1" type="text" placeholder="b"
+                  class=" input input-bordered inline  text-black input-sm w-2/3" />
+                cm
               </div>
               <div>
-                <input type="text" placeholder="h" class="input input-bordered inline w-2/3  input-sm " /> cm
+                <input id="tInput2" type="text" placeholder="h"
+                  class="input text-black input-bordered inline w-2/3  input-sm " />
+                cm
               </div>
             </div>
             <div class="card-actions">
-              <button class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
+              <button id="tBtn" class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
             </div>
           </div>
         </div>
@@ -55,18 +59,20 @@
             <img src="images/rectangle.png" alt="Shoes" class="rounded-xl h-32" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Rectangle</h2>
+            <h2 id="rText" class="card-title">Rectangle</h2>
             <p>Area (A) = w <i class="fa-solid fa-xmark "></i> l</p>
             <div class="flex justify-center w-[95%] mx-auto items-center">
               <div>
-                <input type="text" placeholder="w" class=" input input-bordered inline  input-sm w-2/3" /> cm
+                <input id="rInput1" type="text" placeholder="w"
+                  class=" text-black input input-bordered inline  input-sm w-2/3" /> cm
               </div>
               <div>
-                <input type="text" placeholder="l" class="input input-bordered inline w-2/3 input-sm " /> cm
+                <input id="rInput2" type="text" placeholder="l"
+                  class="input text-black input-bordered inline w-2/3 input-sm " /> cm
               </div>
             </div>
             <div class="card-actions">
-              <button class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
+              <button id="rBtn" class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
             </div>
           </div>
         </div>
@@ -75,21 +81,21 @@
             <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl h-32" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Parallelogram</h2>
+            <h2 id="pText" class="card-title">Parallelogram</h2>
             <p>Area (A) = b <i class="fa-solid fa-xmark "></i> h</p>
             <div class="flex justify-center w-[95%] mx-auto items-center">
               <div>
-                <p>b = <span>2</span> cm , </p>
+                <p>b = <span id="pValue1">2</span> cm , </p>
               </div>
               <div>
-                <p> h = <span>5</span> cm</p>
+                <p> h = <span id="pValue2">5</span> cm</p>
               </div>
-              <button class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button id="pShowBtn" class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
 
             </div>
 
             <div class="card-actions">
-              <button class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
+              <button id="pBtn" class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
             </div>
           </div>
         </div>
@@ -98,69 +104,69 @@
             <img src="images/rhombus.png" alt="Shoes" class="rounded-xl h-32" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Rhombus</h2>
+            <h2 id="romText" class="card-title">Rhombus</h2>
             <p>Area (A) =0.5 <i class="fa-solid fa-xmark "></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i>
               d<sub>2</sub></p>
             <div class="flex justify-center w-[95%] mx-auto items-center">
               <div>
-                <p>d<sub>1</sub> = <span>3</span> cm , </p>
+                <p>d<sub>1</sub> = <span id="romValue1">3</span> cm , </p>
               </div>
               <div>
-                <p> d<sub>2</sub> = <span>4</span> cm</p>
+                <p> d<sub>2</sub> = <span id="romValue2">4</span> cm</p>
               </div>
-              <button class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button id="romShowBtn" class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
             </div>
             <div class="card-actions">
-              <button class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
+              <button id="romBtn" class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
             </div>
           </div>
         </div>
         <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl h-32" />
+            <img src="images/pentagon.png" alt="Shoes" class="rounded-xl h-32" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Parallelogram</h2>
-            <p>Area (A) = b <i class="fa-solid fa-xmark "></i> h</p>
+            <h2 id="penText" class="card-title">Pentagon</h2>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark "></i> p <i class="fa-solid fa-xmark"></i> b</p>
             <div class="flex justify-center w-[95%] mx-auto items-center">
               <div>
-                <p>b = <span>2</span> cm , </p>
+                <p>p = <span id="penValue1">4</span> cm , </p>
               </div>
               <div>
-                <p> h = <span>5</span> cm</p>
+                <p> b = <span id="penValue2">8</span> cm</p>
               </div>
-              <button class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button id="penShowBtn" class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
             </div>
             <div class="card-actions">
-              <button class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
+              <button id="penBtn" class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
             </div>
           </div>
         </div>
         <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl h-32" />
+            <img src="images/ellipse.png" alt="Shoes" class="rounded-xl h-32" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Parallelogram</h2>
-            <p>Area (A) = b <i class="fa-solid fa-xmark "></i> h</p>
+            <h2 id="eText" class="card-title">Ellipse</h2>
+            <p>Area (A) = πab</p>
             <div class="flex justify-center w-[95%] mx-auto items-center">
               <div>
-                <p>b = <span>2</span> cm , </p>
+                <p>a = <span id="eValue1">2</span> cm , </p>
               </div>
               <div>
-                <p> h = <span>5</span> cm</p>
+                <p> b = <span id="eValue2">5</span> cm</p>
               </div>
-              <button class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button id="eShowBtn" class="ms-2"><i class="fa-regular fa-pen-to-square"></i></button>
             </div>
             <div class="card-actions">
-              <button class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
+              <button id="eBtn" class="px-12 text-white py-2 bg-blue-500 rounded-md">Calculate</button>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div class="result-section md:pe-12  w-full md:w-[30%]">
+      <div class="result-section md:pe-5  w-full md:w-[30%]">
         <div class="overflow-x-auto">
           <h2 class="w-fit mx-auto font-semibold text-3xl mt-5 border-b-2 border-black">Area Calculation</h2>
           <table class="table mt-5">
