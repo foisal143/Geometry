@@ -28,7 +28,7 @@
     </nav>
   </header>
   <main>
-    <section class="flex flex-col md:flex-row">
+    <section class="flex mb-10 flex-col md:flex-row">
       <div class="card-section w-full md:w-[70%] mt-12 px-12 grid gap-5 grid-cols-1 md:grid-cols-3 bg-red-">
         <!-- card no one -->
         <div class="card w-full bg-base-100 shadow-xl">
@@ -99,16 +99,15 @@
             <div id="parallelogramInput" class="hidden">
               <div class="flex justify-center  w-full mx-auto items-center">
                 <div>
-                  <input id="pInput1" type="text" placeholder="w"
+                  <input id="pInput1" type="text" placeholder="b"
                     class=" text-black input input-bordered inline  input-sm w-2/3" />
                   cm
                 </div>
                 <div>
-                  <input id="pInput2" type="text" placeholder="l"
+                  <input id="pInput2" type="text" placeholder="h"
                     class="input text-black input-bordered inline w-2/3 input-sm " /> cm
                 </div>
-                <button class="ms-2" id="addPValue"><i
-                    class="fa-solid fa-square-check text-white text-2xl"></i></button>
+                <button class="ms-2" id="addPValue"><i class="fa-solid fa-square-check  text-2xl"></i></button>
               </div>
             </div>
             <div class="card-actions">
@@ -138,12 +137,12 @@
             <div id="romboshInput" class="hidden">
               <div class="flex justify-center  w-full mx-auto items-center">
                 <div>
-                  <input id="romInput1" type="text" placeholder="w"
+                  <input id="romInput1" type="text" placeholder="d1"
                     class=" text-black input input-bordered inline  input-sm w-2/3" />
                   cm
                 </div>
                 <div>
-                  <input id="romInput2" type="text" placeholder="l"
+                  <input id="romInput2" type="text" placeholder="d2"
                     class="input text-black input-bordered inline w-2/3 input-sm " />
                   cm
                 </div>
@@ -176,12 +175,12 @@
             <div id="pentagonShowInput" class=" hidden">
               <div class="flex justify-center  w-full mx-auto items-center">
                 <div>
-                  <input id="pentInput1" type="text" placeholder="w"
+                  <input id="pentInput1" type="text" placeholder="p"
                     class=" text-black input input-bordered inline  input-sm w-2/3" />
                   cm
                 </div>
                 <div>
-                  <input id="pentInput2" type="text" placeholder="l"
+                  <input id="pentInput2" type="text" placeholder="b"
                     class="input text-black input-bordered inline w-2/3 input-sm " />
                   cm
                 </div>
@@ -214,12 +213,12 @@
             <div id="lastShowInput" class=" hidden">
               <div class="flex justify-center  w-full mx-auto items-center">
                 <div>
-                  <input id="lastInput1" type="text" placeholder="w"
+                  <input id="lastInput1" type="text" placeholder="a"
                     class=" text-black input input-bordered inline  input-sm w-2/3" />
                   cm
                 </div>
                 <div>
-                  <input id="lastInput2" type="text" placeholder="l"
+                  <input id="lastInput2" type="text" placeholder="b"
                     class="input text-black input-bordered inline w-2/3 input-sm " />
                   cm
                 </div>
@@ -254,6 +253,15 @@
             </tbody>
           </table>
         </div>
+      </div>
+    </section>
+    <!-- warning display section -->
+    <section>
+      <div id="modal"
+        class="  transition-all ms-10  w-11/12  md:w-1/3 shadow-2xl border border-slate-400 rounded-md  z-10 bg-white h-[25vh] absolute top-[-40%] md:right-[30%]">
+        <p class="w-fit mt-20 mx-auto">Please enter a valid number</p>
+        <button id="modalClose"
+          class="px-8 py-1 rounded-md text-white text-2xl font-semibold relative left-[75%] md:top-[31%] top-5 bg-blue-500">Ok</button>
       </div>
     </section>
   </main>

@@ -1,4 +1,5 @@
 let sirial = 0;
+const modal = document.getElementById('modal');
 
 // function for random color
 function randomColor() {
@@ -43,6 +44,10 @@ function getinputValueString(id) {
 
   return inputField;
 }
+// modal close section
+document.getElementById('modalClose').addEventListener('click', () => {
+  modal.style.top = '-40%';
+});
 // mouse enter event for bg color change
 const cards = document.getElementsByClassName('card');
 for (const card of cards) {
@@ -55,7 +60,6 @@ for (const card of cards) {
 // mouse
 for (const card of cards) {
   card.addEventListener('mouseout', () => {
-    const color = randomColor();
     card.style.backgroundColor = 'white';
     card.style.color = 'black';
   });
@@ -77,7 +81,8 @@ document.getElementById('tBtn').addEventListener('click', () => {
     inputValue1 < 0 ||
     inputValue2 < 0
   ) {
-    return alert('please input a valid number');
+    modal.style.top = '40%';
+    return;
   }
   sirial += 1;
   const total = 0.5 * b * h;
@@ -101,7 +106,8 @@ document.getElementById('rBtn').addEventListener('click', () => {
     inputValue1 < 0 ||
     inputValue2 < 0
   ) {
-    return alert('please input a valid number');
+    modal.style.top = '40%';
+    return;
   }
   sirial += 1;
   const total = w * l;
@@ -139,7 +145,8 @@ document.getElementById('addPValue').addEventListener('click', () => {
     inputValue1 < 0 ||
     inputValue2 < 0
   ) {
-    return alert('please input a valid number');
+    modal.style.top = '40%';
+    return;
   }
 
   setInnerText('pValue1', value1);
@@ -175,7 +182,8 @@ document.getElementById('addRValue').addEventListener('click', () => {
     inputValue1 < 0 ||
     inputValue2 < 0
   ) {
-    return alert('please input a valid number');
+    modal.style.top = '40%';
+    return;
   }
 
   setInnerText('romValue1', value1);
@@ -212,7 +220,8 @@ document.getElementById('addPenValue').addEventListener('click', () => {
     inputValue1 < 0 ||
     inputValue2 < 0
   ) {
-    return alert('please input a valid number');
+    modal.style.top = '40%';
+    return;
   }
 
   setInnerText('penValue1', value1);
@@ -252,7 +261,8 @@ document.getElementById('addLastValue').addEventListener('click', () => {
     inputValue1 < 0 ||
     inputValue2 < 0
   ) {
-    return alert('please input a valid number');
+    modal.style.top = '40%';
+    return;
   }
 
   setInnerText('eValue1', value1);
