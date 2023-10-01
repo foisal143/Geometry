@@ -16,11 +16,20 @@ function displayResult(value1, value2, value3) {
   tr.innerHTML = `
   <td> ${value1} </td>
   <td> ${value2} </td>
-  <td> ${value3} cm </td>
-  <td><button class="px-2 text-white py-1 bg-blue-500 rounded-md">ConvertTo m<sup>2</sup></button></td>
+  <td> <span>${value3}</span> cm </td>
+  <td><button class="px-2 meterBtn text-white py-1 bg-blue-500 rounded-md">ConvertTo m<sup>2</sup></button></td>
   `;
+  tr.addEventListener('click', e => {
+    const value = e.target.parentNode.parentNode.children[2];
+    const cmValueString =
+      e.target.parentNode.parentNode.children[2].children[0].innerText;
+    const cmValue = parseFloat(cmValueString);
+    const meterValue = cmValue / 10000;
+    value.innerHTML = ` ${meterValue} m<sup>2</sup>`;
+  });
   result.appendChild(tr);
 }
+
 // function for get the value of inner
 function getInnerText(id) {
   const innerfield = document.getElementById(id).innerText;
